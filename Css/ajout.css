@@ -1,0 +1,24 @@
+
+#paragraphe{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(1, 1, 147);
+    margin: 1%;
+    color : white;
+    padding: 1%;
+    text-align: center;
+}
+#button1{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(1, 1, 147);
+    margin: 1%;
+    color : white;
+    padding: 3%;
+    text-align: center;
+}
+
+body{
+    margin-left: 40%;
+    margin-right: 40%;
+}
