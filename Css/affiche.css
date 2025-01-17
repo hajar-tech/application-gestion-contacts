@@ -1,7 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     font-family: Arial, sans-serif;
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
 }
 /*liste-side*/
 .contact-list{
@@ -12,30 +20,41 @@ body{
     overflow-y: auto;   
 }
 .btn-add{
-    background-color: #d86416;
+    font-size: 20px;
+    background-color: #f36310;
     position: absolute;
     bottom: 20px;
-    left: 380px;
-    color: white;
+    left: 350px;
+    width: 5%;
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    
+}
+.btn-add a{
+   text-decoration: none;
+   color: #ffffff;
 }
 .all-contact{
-    color: #d86416;
+   margin: 20px 120px;
+    color: #faf6f3;
 }
 /*afffiche-side*/
-.orange{
-    border:1 solid #d86416;
-    background-color: #d86416;
-}
+
 .contact-affiche{
-    background-color: #d86416;
-   
+    background-color: #f36310;  
 }
-.bleu-ciel{
-    background-color: #68a7da;
-    color: white;
-    height: 18%;
+.contact-affiche h4{
+    margin-top: 20px;
+    color:  rgb(0, 0, 0);
+}
+.contact-details{
+    padding-top: 3%;
+    margin-top:10%;
+    margin-left: 7%;
+    justify-content: center;
+    width: 700px;
+    max-width: 100%;
+    background-color: #f2e9e5;
+    border-radius: 10px;
+    box-shadow:inset 5px 5px 5px rgba(202, 198, 196, 0.5);
 }
