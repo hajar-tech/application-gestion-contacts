@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="./../Css/ajout.css" rel="stylesheet">
+    <title>Ajouter contact</title>
+</head>
+
+<body>
+
+    <p id=paragraphe>Ajouter un contact:</p>
+
+    <form class="formulaire">
+        <div class="nom">
+            <img src = "./../images\perssone.jpg" alt = "persone" width="40px" height="40px">
+            <label for="validationServer01" class="form-label">Nom : <br></label>
+            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+
+        <div class="prenom">
+            <img src = "./../images\perssone.jpg" alt = "persone" width="40px" height="40px">
+            <label for="validationServer02" class="form-label">Prénom : <br></label>
+            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+
+        <div class="genre">
+            <img src = "./../images\genre.jpg" alt = "genre" width="40px" height="40px">
+            <label for="validationServer02" class="form-label">Genre : <br></label>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Homme 
+            </label>
+        </div>
+        <div class="genre">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+               Femme
+            </label>
+        </div>
+
+
+        <div class="email">
+            <img src = "./../images\email.jpg" alt = "email" width="30px" height="30px">
+            <label for="validationServerUsername" class="form-label">Email : <br></label>
+            <div class="input-group has-validation">
+                <!--<span class="input-group-text" id="inputGroupPrepend3">@</span> -->
+                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                    aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+        </div>
+
+        <div class="ville">
+            <img src = "./../images/ville.jpg" alt = "ville" width="40px" height="40px">
+            <label for="validationServer03" class="form-label">Ville : <br></label>
+
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Choisir la ville</option>
+                <option value="1">Casablanca </option>
+                <option value="2">Rabat</option>
+                <option value="3">Tanger</option>
+                <option value="4">Marrakech</option>
+            </select>
+        </div>
+        <div class="tele">
+            <img src = "./../images\telephone.jpg" alt = "tele" width="30px" height="30px">
+            <label for="validationServerUsername" class="form-label">Numéro de téléphone : <br></label>
+            <div class="input-group has-validation">
+                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                    aria-describedby="validationServerUsernameFeedback" pattern="^\d{10}$" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                    Le numéro de téléphone doit comporter 10 chiffres.
+                </div>
+            </div>
+        </div>
+
+
+
+        <button id=button1>Ajouter</button>
+    </form>
+</body>
+
+</html>
