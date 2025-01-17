@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*liste-side*/
+.contact-list{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 8, 110);
+    height: 100vh;
+    overflow-y: auto;   
+}
+.btn-add{
+    background-color: #d86416;
+    position: absolute;
+    bottom: 20px;
+    left: 380px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+.all-contact{
+    color: #d86416;
+}
+/*afffiche-side*/
+.orange{
+    border:1 solid #d86416;
+    background-color: #d86416;
+}
+.contact-affiche{
+    background-color: #d86416;
+   
+}
+.bleu-ciel{
+    background-color: #68a7da;
+    color: white;
+    height: 18%;
+}
