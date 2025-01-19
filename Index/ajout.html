@@ -11,11 +11,11 @@
 
     <p id=paragraphe>Ajouter un contact:</p>
 
-    <form class="formulaire">
+    <form class="formulaire" id="form-contact">
         <div class="nom">
             <img src = "./../images\perssone.jpg" alt = "persone" width="40px" height="40px">
             <label for="validationServer01" class="form-label">Nom : <br></label>
-            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+            <input type="text" class="form-control is-valid" id="validationServer01"  required>
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -24,7 +24,7 @@
         <div class="prenom">
             <img src = "./../images\perssone.jpg" alt = "persone" width="40px" height="40px">
             <label for="validationServer02" class="form-label">Prénom : <br></label>
-            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+            <input type="text" class="form-control is-valid" id="validationServer02"  required>
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -33,13 +33,13 @@
         <div class="genre">
             <img src = "./../images\genre.jpg" alt = "genre" width="40px" height="40px">
             <label for="validationServer02" class="form-label">Genre : <br></label>
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="Homme" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
                 Homme 
             </label>
         </div>
         <div class="genre">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <input class="form-check-input" type="checkbox" value="Femme" id="flexCheckChecked" checked>
             <label class="form-check-label" for="flexCheckChecked">
                Femme
             </label>
@@ -51,7 +51,7 @@
             <label for="validationServerUsername" class="form-label">Email : <br></label>
             <div class="input-group has-validation">
                 <!--<span class="input-group-text" id="inputGroupPrepend3">@</span> -->
-                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                <input type="text" class="form-control is-invalid" id="emailInput"
                     aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Please choose a username.
@@ -63,19 +63,19 @@
             <img src = "./../images/ville.jpg" alt = "ville" width="40px" height="40px">
             <label for="validationServer03" class="form-label">Ville : <br></label>
 
-            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+            <select class="form-select form-select-lg mb-3" id="villeSelect" aria-label="Large select example">
                 <option selected>Choisir la ville</option>
-                <option value="1">Casablanca </option>
-                <option value="2">Rabat</option>
-                <option value="3">Tanger</option>
-                <option value="4">Marrakech</option>
+                <option value="Casablanca">Casablanca </option>
+                <option value="Rabat">Rabat</option>
+                <option value="Tanger">Tanger</option>
+                <option value="Marrakech">Marrakech</option>
             </select>
         </div>
         <div class="tele">
             <img src = "./../images\telephone.jpg" alt = "tele" width="30px" height="30px">
             <label for="validationServerUsername" class="form-label">Numéro de téléphone : <br></label>
             <div class="input-group has-validation">
-                <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                <input type="text" class="form-control is-invalid" id="phoneInput"
                     aria-describedby="validationServerUsernameFeedback" pattern="^\d{10}$" required>
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
                     Le numéro de téléphone doit comporter 10 chiffres.
@@ -85,8 +85,9 @@
 
 
 
-        <button id=button1>Ajouter</button>
+        <button type="button" id="btn" class="btn btn-primary">Ajouter</button>
     </form>
+    <script src="./../JS/script.js"></script>
 </body>
 
 </html>
