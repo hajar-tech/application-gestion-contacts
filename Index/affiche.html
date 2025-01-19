@@ -12,7 +12,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 contact-list">
-                    <h4 class="all-contact">All Contacts</h4>
+                    <div class="titre-btn">
+                        <h4 class="all-contact">All Contacts</h4>
+                        <button class="btn-add"><a href="ajout.html">+</a></button>
+                    </div>
+                    
                     
                        <div class="input-group mb-3" style="gap: 6px;">
                            <img class="logo-search" src="./../Assets/icons-afficher/icons8-search-32.png" alt="">
@@ -23,16 +27,19 @@
                     <ul id="contactList" class="list-unstyled">
                         <!-- Contacts ajoutés -->
                     </ul>
-                    <button class="btn-add"><a href="ajout.html">+</a></button>
+                    
                 </div>
-                <div class="col-8 contact-affiche text-center">
-                    <h4>Sélectionnez un contact</h4>
-                   <div class="contact-details">
-                   
-                   </div>
+                <div  class="col-8 contact-affiche text-center">
+                    <div style="margin-top: 100px;" id="contact-detail" class="card p-3">
+                        <h3>Détails du Contact</h3>
+                        <p>Sélectionnez un contact pour afficher les détails ici.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

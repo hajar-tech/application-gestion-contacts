@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+   
 }
 body{
     margin: 0%;
@@ -15,17 +16,22 @@ body{
 .contact-list{
     justify-content: center;
     align-items: center;
-    background-color: rgb(8, 8, 110);
+    background-color: rgb(5, 5, 99);
+    box-shadow:inset 5px 5px 5px rgba(202, 198, 196, 0.5);
     height: 100vh;
     overflow-y: auto;   
+}
+.titre-btn{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    position: sticky;
 }
 .btn-add{
     font-size: 20px;
     background-color: #f36310;
-    position: absolute;
-    bottom: 20px;
-    left: 350px;
-    width: 5%;
+    width: 10%;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -35,8 +41,7 @@ body{
    color: #ffffff;
 }
 .all-contact{
-   margin: 20px 120px;
-    color: #faf6f3;
+    color: #fffdfd;
 }
 /*afffiche-side*/
 
